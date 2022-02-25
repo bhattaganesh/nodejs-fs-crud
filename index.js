@@ -79,7 +79,7 @@ const deleteDirAndFile = ( filePath, dirName ) => {
 		} else {
 			fs.rmdir( process.cwd() + '/' + dirName, (err)=> {
 				if ( err ) {
-					console.error( 'Sorry!, error occured while renaming directory.' );
+					console.error( 'Sorry!, error occured while deleting directory.' );
 				} else {
 					console.log( 'Directory deleted successfully.' );
 				}
@@ -91,7 +91,7 @@ const deleteDirAndFile = ( filePath, dirName ) => {
 	/* For Deleting Directory in Recursive Mode. */
 	// fs.rm( process.cwd() + '/' + dirName, { recursive: true }, (err)=> {
 	// 	if ( err ) {
-	// 		console.error( 'Sorry!, error occured while renaming directory.' );
+	// 		console.error( 'Sorry!, error occured while deleting directory.' );
 	// 	} else {
 	// 		console.log( 'Directory deleted successfully.' );
 	// 	}
